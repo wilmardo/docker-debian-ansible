@@ -1,9 +1,9 @@
 FROM debian:9
 
+LABEL maintainer="Wilmar den Ouden <info@wilmardenouden.nl>"
+
 ENV container docker
 ENV DEBIAN_FRONTEND noninteractive
-
-LABEL maintainer="Wilmar den Ouden <info@wilmardenoude.nl>"
 
 RUN apt-get update \
     && apt-get install -y --no-install-recommends \
